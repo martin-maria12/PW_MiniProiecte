@@ -1,0 +1,35 @@
+<form method="POST" action="/verificare-autentificare">
+
+    <% if (mesajEroare2) { %>
+        <p><%= mesajEroare2 %></p>
+    <% } %>
+
+    <br>
+
+    <% if (mesajEroare) { %>
+        <p><%= mesajEroare %></p>
+    <% } %>
+
+    <br>
+            
+    <div class="pentruForm">
+        <div class="titlu"> Utilizator </div>
+
+        <div class="item">
+            <input type="text" name="utilizator" placeholder="Utilizator" required>
+        </div>
+
+        <br>
+
+        <div class="item">
+            <input type="password" name="parola" placeholder="Parolă" required><br>
+        </div>
+
+        <div class="item">
+            <button type="submit">Autentificare</button>
+            <br>
+        </div>
+
+    </div>
+
+</form>

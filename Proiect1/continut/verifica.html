@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "ro-Ro">
+
+    <head>
+        <title>Verifica</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+    
+        <div class="micContent">
+            
+            <div class="pentruForm">
+                <div class="titlu"> Utilizator </div>
+
+                <div class="item">
+                    <input type="text" id="userV" name="numeUtilizator" value="Nume Utilizator"> 
+                </div>
+
+                <br>
+
+                <div class="item">
+                    <div class="iconpass">
+
+                    </div>
+                    <input type="password" id="passV" name="parola" value="Parola">
+                </div>
+
+                <div class="item">
+                    <button type="button" onclick="verificareHTML(document.getElementById('userV').value,document.getElementById('passV').value)">Verifică</button>
+                    <br>
+                    <p id="stare"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

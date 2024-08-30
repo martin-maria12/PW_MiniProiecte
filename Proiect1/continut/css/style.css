@@ -1,0 +1,940 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../img/fundal.jpg");
+}
+
+.header{
+	width: 100%;
+	height: 120px;
+	background-image: linear-gradient(#f185de,#f1a7e4, #fce2eb);
+    padding-bottom: 10px;
+    position: fixed;
+}
+
+nav{
+    overflow: hidden;
+    text-align: center;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    color: #6c0c46;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:link{
+    color: #9f0f9c;
+}
+
+nav a:visited{
+    color: #580857;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #6c0c46;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+}
+
+.logoContent{
+    float: left;
+    height: 120px;
+    width: 120px;
+    padding: 20px 0px 0px 30px;
+    visibility:visible;
+}
+
+.title{
+    font-size: 40px;
+    font-family:'Georgia';
+    font-weight: bold;
+    color: #6c0c46;
+    padding: 30px 0px 20px 0px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #602f6f;
+}
+
+footer{
+    width: 100%;
+    background-image: linear-gradient( #fce2eb, #f1a7e4, #f185de);
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    top: 300px;
+}
+
+.indexContent{
+	color:  black;
+	text-align: center;
+    padding: 180px 0px 100px 0px;
+}
+
+.indexContent h3{
+    padding-bottom: 30px;
+}
+
+.indexContent p{
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 50px;
+}
+
+.indexContent p strong{
+    color:#580857;
+}
+
+.indexContent img{
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 40px;
+    align-items: center;
+    border-radius: 25%;
+}
+
+.despreContent{
+	color:  black;
+	text-align: left;
+    padding: 150px 0px 50px 25px;
+}
+
+.despreContent h1{ 
+    color: #6c0c46;
+    font-family: 'Rouge Script', cursive; 
+    font-size: 80px; 
+    font-weight: normal; 
+    text-align: center;
+}
+
+.despreContent h2{ 
+    color: #4d042f;
+    font-family: 'Julius Sans One', sans-serif; 
+    font-size: 30px; 
+    font-weight: bold; 
+    padding: 0px 0px 20px 60px;
+}
+
+.despreContent h3{ 
+    font-family: 'Julius Sans One', sans-serif; 
+    font-size: 22px;
+    padding: 20px 0px 10px 30px;
+    top: 40px;
+}
+
+.despreContent p{
+    font-size: 16px;
+    font-family: 'Carme', sans-serif;
+    padding-right: 15px;
+}
+
+.despreContent p::first-letter{
+    color:#640f56;
+    font-size: 18px;
+}
+
+.despreContent ol{
+    list-style-type: decimal;
+    padding: 10px 0px 10px 100px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.despreContent table{
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.despreContent tr{
+    background-color: #dda9d1c5;
+}
+
+.despreContent td{
+    border:2px solid;
+    border-color:#8c0876;
+}
+
+a{
+    color:#89174e;
+}
+  
+a:hover{
+    color:#ffffff;
+    background-color: #89174e;
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+}
+
+.divizor{
+    text-align: center;
+}
+
+.pozeCont{
+    width: 100%;
+}
+
+.pozeCont .polaroid{
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
+    margin-bottom: 25px;
+    padding: 5px 10px 5px 10px;
+    float: left;
+}
+
+.pozeCont .container{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+form{
+    text-align: left;
+    background-color: #faa4f3c5;
+    padding: 15px;
+    margin: 30px 150px 30px 150px;
+    border:2px solid #8c0876;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#8c0876;
+}
+
+.despreContent form p,h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form input, select{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #8c0876;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.despreContent form select{
+    width: 80%;
+}
+
+form input:focus{
+    border-color:#ffffff;
+    background-color: #8c0876;
+    color:#ffffff;
+}
+
+form input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+}
+
+form button{
+    background-color: #8c0876;
+    color: #ffffff;
+    padding: 12px 5px 12px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin: 50px 200px 50px 200px;
+    font-size: 15px;
+    width: 25%;
+}
+
+form button:hover{
+    background-color: #813d8b;
+}
+
+form textarea{
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+form label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+form .col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+form .col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.customRange{
+    width: 50%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.micContent{
+    color:  #000000;
+	text-align: center;
+    padding: 150px 7px 50px 7px;
+}
+
+.micContent h2{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: #580857;
+    padding: 40px 0px 25px 0px;
+}
+
+.micContent h1{
+    color: #8c0876;
+    font-family: 'Rouge Script', cursive; 
+    font-size: 60px; 
+    font-weight: normal; 
+    padding-top: 15px;
+}
+
+.micContent iframe{
+    width: 420px;
+    height: 315px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ec9ee49d;
+    flex-direction: row;
+    text-align: center;
+    color: #8c0876;
+}
+
+.flex-container > div{
+    width: 450px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+    font-weight: bold;
+}  
+
+.invatContent{
+    color:  #000000;
+	text-align: left;
+    padding: 150px 0px 50px 0px;
+}
+
+.invatContent section{
+    padding-top: 150px;
+    color: #8c0876;
+    font-family: 'Rouge Script', cursive; 
+    font-size: 30px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.invatContent section h1{
+    float: left;
+    padding-left: 15px;
+}
+
+.invatContent section h3{
+    color: #3e0535;
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.invatContent section p{
+    color: #000000; 
+    font-size: 18px; 
+    font-weight: normal; 
+}
+
+.invatContent aside{
+    padding: 50px;
+    font-size: 30px;
+    background-color: #e499cab3;
+    text-align: center;
+    height: 20%;
+    margin: 50px 300px 50px 300px;
+    border-radius: 20px;
+    border: 5px solid #8c0876;
+}
+
+.invatContent aside a{
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.invatContent aside a:hover{
+    margin: 0px 100px 0px 100px;
+    background-color: #8c0876;
+    color: #ffffff;
+    font-size: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.invatContent hr{
+    padding: 20px 0px 20px 0px;
+    border-top: 5px dotted #8c0876;
+    border-bottom: #6e4a0200;
+    border-left: #6e4a0200;
+    border-right: #6e4a0200;
+}
+
+.invatContent canvas{
+    margin: 50px 0px 20px 0px;
+    width: 800px;
+    height: 500px;
+    border: 2px solid #000000;
+    cursor: crosshair;
+    background-color: #ffffff;
+}
+
+.invatContent button{
+    padding: 15px;
+    background-color: #e499cab3;
+    border: 2px solid #8c0876;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #8c0876;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.invatContent label{
+    font-size: 20px;
+}
+
+.invatContent input{
+    border-color: #8c0876;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.invatContent select{
+    width: 200px;
+    padding: 10px 10px 15px 10px;
+    border-radius: 4px;
+    border-color: #8c0876;
+    font-size: 18px;
+}
+
+.invatContent table{
+    border: 3px solid #000000;
+    text-align: center;
+    margin: 20px 0px 0px 20px;
+    font-size: 20px;
+    color: #8c0876;
+}
+
+.invatContent table td{
+    border: 3px solid #000000;
+    padding: 10px;
+    margin: 5px;
+}
+
+.invatContent table td input{
+    border: 1px solid;
+    padding: 10px;
+    margin: 5px;
+    background-color:#2b282500;
+}
+
+.altContent{
+    color:  #000000;
+	text-align: left;
+    padding: 200px 10px 200px 10px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.altContent table{
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 2px;
+    border: 2px solid #8c0876;
+    color:#48063d;
+    background-color: #785b71c5;
+    font-weight: bold;
+}
+
+.altContent table td{
+    border: 2px solid #8c0876;
+    padding: 4px;
+    background-color: #f4bce7c5;
+}
+
+.micContent .pentruForm{
+    width: 50%;
+    height: 350px;
+    background: #ffffff69;
+    border: 1px solid #580857;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px #00000010;
+    text-align: center;
+    margin: 100px 200px 100px 400px;
+}
+
+.micContent .pentruForm .titlu{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.micContent .item{
+    height: 50px;
+    width: 80%;
+    margin: 10px 0px 0px 50px;
+    position: relative;
+}
+
+.micContent .item input, select{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid #ebdfdf;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.micContent form select{
+    width: 80%;
+}
+
+.micContent .item input:focus, select:focus{
+    border-color: #650480;
+}
+
+.micContent .item button{
+    color: #ffffff;
+    margin: 10px 20px 10px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    transition: all 0.3s ease;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.micContent .item button:hover{
+    transform: scale(0.95);
+}
+
+.micContent .formularCumparare{
+    width: 50%;
+    height: 370px;
+    background: #e3b0ed69;
+    border: 1px solid #580857;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px #00000010;
+    text-align: center;
+    margin: 10px 270px 50px 400px;
+}
+
+.micContent .formularCumparare .item label{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.micContent table{
+    border: 3px solid #000000;
+    text-align: center;
+    margin: 20px 100px 20px 500px;
+    font-size: 20px;
+    color: #8c0876;
+    background-color: #785b71c5;
+}
+
+.micContent table td{
+    border: 3px solid #000000;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f4bce7c5;
+}
+
+.micContent img{
+    width: 200px;
+    height: 240px;
+    float: left;
+    padding: 50px;
+    bottom: 50px;
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        position: relative;
+        height: 250px;
+    }
+    .logoContent{
+        visibility: hidden;
+    }
+    .title{
+        font-size: 25px;
+        padding-top: 2px;
+        margin-right: 100px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 150px;
+    }
+    nav a{
+        font-size: 10px;
+        padding: 3px;
+    }
+    nav a:hover{
+        font-size: 10px;
+        padding: 2px;
+    }
+    .indexContent{
+        padding: 80px 0px 50px 0px;
+    }
+    .indexContent h3{
+        padding-bottom: 15px;
+    }
+    .indexContent p{
+        font-size: 7px;
+        text-align: left;
+        padding: 5px 25px;
+    }
+    .indexContent img{
+        width: 300px;
+        height: 150px;
+        padding-bottom: 20px;
+    }
+    .indexContent h1{
+        font-size: 12px;
+    }
+    .indexContent h3{
+        font-size: 10px;
+    }
+    .despreContent{
+        padding: 30px 0px 25px 10px;
+    }
+    .despreContent h1{
+        font-size: 25px;
+    }
+    .despreContent h2{
+        font-size: 16px;
+        padding: 0px 0px 8px 25px;
+    }
+    .despreContent h3{
+        font-size: 14px;
+        padding: 10px 0px 5px 12px;
+        top: 15px;
+    }
+    .despreContent p{
+        font-size: 8px;
+        padding-right: 7px;
+    }
+    .despreContent p::first-letter{
+        font-size: 10px;
+    }
+    .despreContent ol{
+        padding: 5px 0px 5px 40px;
+        font-size: 8px;
+    }
+    .despreContent table{
+        font-size: 8px;
+    }
+    a:hover{
+        padding: 0px 2px 0px 2px;
+        font-size: 12px;
+    }
+    .despreContent .polaroid img{
+        width: 100px;
+        height: 100px;
+    }
+    .pozeCont .polaroid{
+        width: 100px;
+        box-shadow: 0 2px 4px 0 #000000, 0 3px 10px 0 #000000;
+        margin-bottom: 13px;
+        padding: 3px 5px 3px 5px;
+    }
+    .pozeCont .container{
+        padding: 5px 5px 10px 5px;
+        margin-bottom: 5px;
+        font-size: 8px;
+    }
+    .despreContent .divizor img{
+        width: 80%;
+        height: 40px;
+    }
+    form{
+        padding: 8px;
+        margin: 15px 75px 15px 75px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    .despreContent form p,h2{
+        font-size: 12px;
+    }
+    .despreContent form .row .col-25 img{
+        width: 50px;
+        height: 50px;
+    }
+    form input, select{
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 10px;
+        height: 20px;
+    }
+    form input[type=checkbox]{
+        width: 15px;
+        height: 15px;
+    }
+    form button{
+        padding: 6px 3px 6px 3px;
+        border-radius: 2px;
+        margin: 25px 100px 25px 100px;
+        font-size: 10px;
+        width: 100px;
+    }
+    form textarea{
+        height: 75px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    form label{
+        padding: 6px 6px 16px 0;
+    }
+    form .col-25{
+        margin-top: 3px;
+    }
+    form .col-75{
+        margin-top: 3px;
+    }
+    .customRange{
+        height: 13px;
+    }
+    form img{
+        width: 50px;
+        height: 50px;
+    }
+    .despreContent iframe{
+        width: 80%;
+        height: 250px;
+    }
+    .despreContent img{
+        width: 200px;
+        height: 100px;
+    }
+    .micContent{
+        padding: 75px 7px 25px 7px;
+    }
+    .micContent h2{
+        padding: 20px 0px 13px 0px;
+    }
+    .micContent h1{
+        font-size: 25px;
+        padding-top: 7px;
+    }
+    .micContent iframe{
+        width: 200px;
+        height: 150px;
+    }
+    .flex-container{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 150px;
+        margin: 10px 25px;
+    }
+    .flex-container h2{
+        padding: 5px 0px 5px 85px;
+        text-align: center;
+    }
+    .flex-container > div{
+        width: 100px;
+        line-height: 45px;
+        font-size: 10px;
+    }
+    .invatContent{
+        padding: 40px 0px 25px 0px;
+    }
+    .invatContent section{
+        padding-top: 75px;
+        font-size: 15px; 
+    }
+    .invatContent section h1{
+        padding-left: 12px;
+    }
+    .invatContent section h3{
+        font-size: 10px; 
+    }
+    .invatContent section p{
+        font-size: 10px;
+    }
+    .invatContent aside{
+        padding: 25px;
+        font-size: 15px;
+        margin: 25px 150px 25px 150px;
+        border-radius: 10px;
+    }
+    .invatContent aside a{
+        padding: 5px;
+    }
+    .invatContent aside a:hover{
+        margin: 0px 50px 0px 50px;
+        font-size: 15px;
+        border-radius: 2px;
+    }
+    .invatContent hr{
+        padding: 10px 0px 10px 0px;
+        border-top: 3px dotted #8c0876;
+    }
+    .invatContent canvas{
+        margin: 25px 0px 10px 0px;
+        width: 400px;
+        height: 250px;
+        border: 2px solid #000000;
+    }
+    .invatContent button{
+        padding: 7px;
+        border-radius: 2px;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .invatContent label{
+        font-size: 10px;
+    }
+    .invatContent input{
+        padding: 3px;
+        margin: 2px;
+        font-size: 10px;
+        width: 50px;
+        height: 25px;
+    }
+    .invatContent select{
+        width: 100px;
+        padding: 5px 5px 7px 5px;
+        border-radius: 2px;
+        font-size: 10px;
+    }
+    .invatContent table{
+        margin: 10px 0px 0px 10px;
+        font-size: 10px;
+    }
+    .invatContent table td{
+        padding: 5px;
+        margin: 3px;
+    }
+    .invatContent table td input{
+        padding: 5px;
+        margin: 2px;
+    }
+    .altContent{
+        padding: 40px 5px 30px 5px;
+        font-size: 12px;
+    }
+    .altContent table{
+        font-size: 8px;
+        padding: 1px;
+    }
+    .altContent table td{
+        padding: 2px;
+    }
+    .micContent .pentruForm{
+        height: 210px;
+        border-radius: 7px;
+        box-shadow: 0px 7px 10px #00000010;
+        margin: 50px 100px 50px 150px;
+    }
+    .micContent .pentruForm .titlu{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 50px;
+        border-radius: 7px 7px 0 0;
+        background: linear-gradient(-75deg, #c850c0, #4158d0);
+    }
+    .micContent .item{
+        height: 25px;
+        margin: 5px 0px 0px 25px;
+    }
+    .micContent .row button{
+        width: 100px;
+    }
+    .micContent .item input,select{
+        height: 25px;
+        font-size: 8px;
+        padding-left: 10px;
+        border-radius: 12px;
+    }
+    .micContent .item button{
+        margin: 5px 10px 5px 5px;
+        font-size: 10px;
+        font-weight: 250;
+        background: linear-gradient(-75deg, #c850c0, #4158d0);
+    }
+    .micContent .item p{
+        font-size: 10px;
+    }
+    .micContent h2{
+        font-size: 20px;
+    }
+    .micContent .formularCumparare{
+        height: 250px;
+        border-radius: 7px;
+        box-shadow: 0px 7px 10px #00000010;
+        margin: 5px 100px 25px 100px;
+    }
+    .micContent .formularCumparare .item label{
+        font-size: 10px;
+    }
+    .micContent table{
+        border: 2px solid #000000;
+        margin: 10px 50px 10px 120px;
+        font-size: 10px;
+    }
+    .micContent table td{
+        border: 2px solid #000000;
+        padding: 5px;
+        margin: 2px;
+    }
+    .micContent img{
+        width: 100px;
+        height: 120px;
+        padding: 25px;
+        bottom: 25px;
+    }
+}

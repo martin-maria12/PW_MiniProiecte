@@ -1,0 +1,57 @@
+<% if (!utilizator) { %>
+    <form action="/delogare" method="GET">
+        <button type="submit"><a href="autentificare">Autentificare!</a></button>
+    </form>
+<% } %>
+
+  
+<br><br>
+
+<h1>Bun venit!</h1>
+
+<div class="butoane">
+
+    <form method="GET" action="/afisare-produse">
+        <button type="submit">Afișare produse</button>
+    </form>
+
+    <form method="GET" action="/vizualizare-cos">
+        <button type="submit">Vizualizare coș</button>
+    </form>
+</div>
+
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nume produs</th>
+        <th>Preț produs</th>
+        <th>Cumpără</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% if (data && data.length) { %>
+            <% data.forEach((produs) => { %>
+                <tr>
+                    <td><%= produs.id_produs %></td>
+                    <td><%= produs.nume_produs %></td>
+                    <td><%= produs.pret_produs %> RON</td>
+                    <td>
+                        <% if (utilizator) { %>
+                            <div class="adaugarea">
+                                <input type="button" value="Adaugă în coș" onclick="location.href='/adauga-in-cos?id=<%= produs.id_produs %>'">
+                            </div>
+                        <% } %>
+                    </td>
+                </tr>
+            <% }); %>
+        <% } else { %>
+            <h4>Nu există date de afișat</h4>
+        <% } %>
+    </tbody>
+</table>
+
+<% if (confirmare) { %>
+    <h5><%= confirmare %></h5> <!-- Mesajul de confirmare -->
+<% } %>
+  

@@ -1,0 +1,24 @@
+[
+    {
+      "utilizator": "Maria",
+      "parola": "Maria",
+      "nume": "Maria",
+      "prenume": "Martin",
+      "rol": "ADMIN"
+    },
+    {
+      "utilizator": "Denis",
+      "parola": "Denis",
+      "nume": "Denis",
+      "prenume": "Plescan",
+      "rol": "USER"
+    },
+    {
+      "utilizator": "Testare",
+      "parola": "Testare",
+      "nume": "Testare",
+      "prenume": "Blocare",
+      "rol": "USER"
+    }
+  ]
+  

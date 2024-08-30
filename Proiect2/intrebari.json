@@ -1,0 +1,34 @@
+[
+    {
+      "intrebare": "Cine a realizat faimoasa operă \"Monalisa\"?",
+      "variante": [
+        "Leonardo da Vinci",
+        "Johannes Vermeer",
+        "Vincent Van Gogh",
+        "Constantin Brâncuși"
+      ],
+      "corect": 0
+    },
+
+    {
+      "intrebare": "Cine este Constantin Brâncuși?",
+      "variante": [
+        "Comediant",
+        "Dansator",
+        "Sculptor",
+        "Actor"
+      ],
+      "corect": 2
+    },
+
+    {
+        "intrebare": "Ce este un pictor?",
+        "variante": [ 
+            "Persoană care creează opere de sculptură sau lucrează sculpturi",
+            "Artist care creează opere de artă care pot fi picturi, fresce", 
+            "Persoană care compune sau execută compoziții muzicale", 
+            "Persoană care prezintă un spectacol"
+        ],
+        "corect": 1
+    }
+  ]

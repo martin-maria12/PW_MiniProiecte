@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro-Ro">
+
+    <head>
+        <title>Feline</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body onload="callAll()">
+
+        <div class="invatContent">
+
+            <aside id="aside">
+                <a href="#s1">Secțiunea 1</a><br>
+                <a href="#s2">Secțiunea 2</a><br>
+                <a href="#s3">Secțiunea 3</a><br>
+            </aside>
+
+            <hr>
+
+            <section id="s1">
+
+                <h1>1. Secțiune informativă</h1><br><br>
+                    
+                <h3>Data și Timpul curent:</h3>
+                <p id="p1">Data&Timp</p><br>
+
+                <h3>URL-ul complet al paginii curente:</h3>
+                <p id="p2">URL</p><br>
+
+                <h3>Poziția curentă a utilizatorului:</h3>
+                <p id="p3">Poziția</p><br>
+
+                <h3>Numele și Versiunea Browser-ului utilizat:</h3>
+                <p id="p4">Despre Browser</p><br>
+
+                <h3>Sistemul de operare:</h3>
+                <p id="p5">Sistem de Operare</p>
+
+            </section>
+
+            <hr>
+
+            <section id="s2">
+                <h1>2. Secțiune pentru desenare</h1><br><br>
+
+                <label id="favcolor1">Selectează culoarea pentru umplere</label>
+                <input type="color" id="favcolor" name="favcolor"> <br>
+
+                <label id="favcolor_2">Selectează culoarea pentru contur</label>
+                <input type="color" id="favcolor2" name="favcolor2"> <br> <br>
+
+                <label id="formaDesen">Forma pe care doriți să o desenați:</label>
+                <select name="Forma" id="ptDesen">
+                    <option value="0">Dreptunghi</option>
+                    <option value="1">Cerc</option>
+                </select><br><br>
+                
+                <canvas id="myCanvas" onclick="Draw()">
+                </canvas>
+                <br>
+                <button onclick="getColor()">Află culoarea selectată pentru umplere</button>
+                <button onclick="getColor2()">Află culoarea selectată pentru contur</button>
+                <button onclick="deleteDraw()">Șterge Desenul</button>
+                <p id="p6"></p>
+                <p id="p7"></p>
+
+            </section>
+
+            <hr>
+
+            <section id="s3">
+                <h1>3. Secțiune pentru modificarea unui tabel</h1><br><br>
+                
+                <label id="delLinie">Linia pe care doriți să o ștergeți:</label>
+                <input type="number" name="stergLinie" id="stergeL" min="0"><br>
+
+                <label id="addLinie">Poziția pe care o doriți pentru noua linie:</label>
+                <input type="number" name="addLinie" id="adaugaL" min="1"><br>
+
+                <label id="addColoana">Poziția pe care o doriți pentru noua coloană:</label>
+                <input type="number" name="addCoaloana" id="adaugaC" min="0"><br>
+
+                <label id="colorCell1">Selectează culoarea pentru colorarea fundalului noii linii</label>
+                <input type="color" id="colorCell" name="colorCell"> <br>
+
+                <br><br>
+
+                <button onclick="stergeLinie()" id="stergeLinie">Șterge Linia</button>
+                <button onclick="adaugaLinie()" id="adaugaLinie">Adaugă Linie</button>
+                <button onclick="adaugaColoana()" id="adaugaColoana">Adaugă Coloană</button>
+
+                <br><p> <strong>ATENȚIE!!!!</strong><br> 
+                    Dacă nu ați precizat ce linie doriți să ștergeți, se va șterge implicit prima linie (cea cu index 0);<br>
+                    Dacă nu ați precizat unde doriți să adăugați noua linie, implicit se va adăuga după ultima linie existentă;<br>
+                    Dacă nu ați precizat unde doriți să adăugați noua coloană, implicit se va adăuga după ultima coloană existentă;<br>
+                    Nu pot fi adăugate linii pe poziția 0;<br></p>
+
+                <table id="myTable">
+                    <tr>
+                        <td>Caracteristici\Rasa Pisicii</td>
+                        <td>Siameză</td>
+                        <td>Persană</td>
+                        <td>Albastru de Rusia</td>
+                    </tr>
+
+                    <tr>
+                        <td>Proveniență</td>
+                        <td>Thailanda</td>
+                        <td>Iran</td>
+                        <td>Rusia</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tip Blană</td>
+                        <td>Blana scurtă</td>
+                        <td>Blana lungă</td>
+                        <td>Blana dublă</td>
+                    </tr>
+
+                    <tr>
+                        <td>Culoare Ochi</td>
+                        <td>Albastru Safir</td>
+                        <td>Briliant</td>
+                        <td>Verzi</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+        </div>
+
+    </body>
+    
+</html>

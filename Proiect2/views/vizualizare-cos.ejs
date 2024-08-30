@@ -1,0 +1,11 @@
+<h2>Vizualizare coș</h2>
+
+<% if (produse && produse.length) { %>
+    <% produse.forEach((produs) => { %>
+      <h4>
+        <%= produs.cantitate %>x <%= produs.nume %> &emsp; <%= produs.sumaPret %> RON
+      </h4>
+    <% }); %>
+<% } else { %>
+    <h4>Nu există produse în coșul de cumpărături</h4>
+<% } %>

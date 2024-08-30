@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ro-Ro">
+
+    <head>
+        <title>Feline</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+
+        <div class="micContent">
+
+            <form>
+
+                <h2><strong>Informații generale</strong></h2>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Nume Utilizator:</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="user" name="numeUtilizator"> 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Parola:</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="pass" name="parola">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Nume:</label>  
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="nume">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Prenume:</label>  
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="prenume">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Email:</label>  
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Telefon:</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" name="telefon">
+                    </div>
+                </div>
+              
+                <br>
+
+                <h2><strong>Informații personale</strong></h2>
+            
+                <div class="row">
+                    <div class="col-25">
+                        <label>Sex:</label> 
+                    </div>
+                    <div class="col-75">
+                        <select name="Sex">
+                            <option value="feminin">Feminin</option>
+                            <option value="masculin">Masculin</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tip-mancare-preferata">Alege mâncarea preferată:</label>
+                    </div>
+                    <div class="col-75">
+                        <input list="mancare-preferata" id="tip-mancare-preferata" name="tip-mancare-preferata">
+                        
+                        <datalist id="mancare-preferata">
+                            <option value="Asiatică">
+                            <option value="Tradițională">
+                            <option value="Franțuzească">
+                            <option value="Americană">
+                            <option value="Italienească">
+                        </datalist>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-25">
+                        <label>Culoare Preferată:</label>  
+                    </div>
+                    <div class="col-75">
+                        <input type="color" name="culoare">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Data Nașterii:</label>  
+                    </div>
+                    <div class="col-75">
+                        <input type="date" name="datan">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Ora Nașterii:</label>  
+                    </div>
+                    <div class="col-75">
+                        <input type="time" name="oran">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Vârsta:</label>  
+                    </div>
+                    <div class="col-75">
+                        <input type="range" min="0" max="150" value="50" class="customRange" name="varsta">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Adresa paginii personal:</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="url" name="addpg">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label>Descriere:</label> 
+                    </div>
+                    <div class="col-75">
+                        <textarea name="descriere">
+                            Descriere
+                        </textarea>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-25">
+                        <img src="./img/cute.png" alt="cuteCat" width="80" height="80">
+                    </div>
+                    <div class="col-75">
+                        <button type="button" onclick="inregistreaza()">Înregistrează</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-75">
+                        <p id="okInreg" ></p>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+    
+</html>

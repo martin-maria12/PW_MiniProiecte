@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume, prenume, varsta, adresa, liceu, studiiSuperioare, detaliiPisica)>
+<!ATTLIST persoana id CDATA #REQUIRED>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT adresa (strada, numar, localitate, judet, tara)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+<!ELEMENT liceu (#PCDATA)>
+<!ELEMENT studiiSuperioare (#PCDATA)>
+<!ELEMENT detaliiPisica (numeP, varstaP, rasa, sex)>
+<!ELEMENT numeP (#PCDATA)>
+<!ELEMENT varstaP (#PCDATA)>
+<!ELEMENT rasa (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+]>
+<persoane>
+	<persoana id="1">
+		<nume>Popescu</nume>
+		<prenume>Ion</prenume>
+		<varsta>23</varsta>
+		<adresa>
+			<strada>Mihai Eminescu</strada>
+			<numar>432</numar>
+			<localitate>Iași</localitate>
+			<judet>Iași</judet>
+			<tara>România</tara>
+		</adresa>
+		<liceu>Liceul Teoretic Miron Costin</liceu>
+		<studiiSuperioare>Facultatea de Automatică și Calculatoare</studiiSuperioare>
+		<detaliiPisica>
+			<numeP>Oliver</numeP>
+			<varstaP>4</varstaP>
+			<rasa>Persană</rasa>
+			<sex>M</sex>
+		</detaliiPisica>
+	</persoana>
+
+	<persoana id="2">
+			<nume>Georgesu</nume>
+			<prenume>Petronela</prenume>
+			<varsta>20</varsta>
+			<adresa>
+				<strada>Izvoarelor</strada>
+				<numar>8</numar>
+				<localitate>Pașcani</localitate>
+				<judet>Iași</judet>
+				<tara>România</tara>
+			</adresa>
+			<liceu>Liceul Teoretic Mihail Sadoveanu</liceu>
+			<studiiSuperioare>Facultatea de Informatică</studiiSuperioare>
+			<detaliiPisica>
+				<numeP>Luna</numeP>
+				<varstaP>2</varstaP>
+				<rasa>Siameză</rasa>
+				<sex>F</sex>
+			</detaliiPisica>
+	</persoana>
+
+	<persoana id="3">
+		<nume>Simion</nume>
+		<prenume>Gabriela</prenume>
+		<varsta>57</varsta>
+		<adresa>
+			<strada>Otelari</strada>
+			<numar>17</numar>
+			<localitate>Iași</localitate>
+			<judet>Iași</judet>
+			<tara>România</tara>
+		</adresa>
+		<liceu>Colegiul Național Iași</liceu>
+		<studiiSuperioare>Facultatea de Psihologie şi Ştiinţe ale Educaţiei</studiiSuperioare>
+		<detaliiPisica>
+			<numeP>Tobi</numeP>
+			<varstaP>10</varstaP>
+			<rasa>Europeană</rasa>
+			<sex>M</sex>
+		</detaliiPisica>
+	</persoana>
+
+	<persoana id="4">
+		<nume>Pintilie</nume>
+		<prenume>Răzvan</prenume>
+		<varsta>38</varsta>
+		<adresa>
+			<strada>Plopilor</strada>
+			<numar>21</numar>
+			<localitate>Rogojeni</localitate>
+			<judet>Gorj</judet>
+			<tara>România</tara>
+		</adresa>
+		<liceu>Colegiul Național Spiru Haret</liceu>
+		<studiiSuperioare>Facultatea de Mecanică</studiiSuperioare>
+		<detaliiPisica>
+			<numeP>Izzy</numeP>
+			<varstaP>7</varstaP>
+			<rasa>British Shorthair</rasa>
+			<sex>F</sex>
+		</detaliiPisica>
+	</persoana>
+
+</persoane>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "ro-Ro">
+
+    <head>
+        <title>Verifica</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+        <script src="js/cumparaturi.js"></script>
+        <script src="js/worker.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+
+        <div class="micContent">
+
+            <h2><strong>Cumpărături</strong></h2> 
+            
+            <img src="./img/catPackage.png" alt="imagine cu mancare pisici">
+            
+            <div class="formularCumparare">
+
+                <div class="item">
+                    <div class="row">
+                        <label>Produs:</label>
+                        <select id="numeProd" name="numeProdus">
+                            <option value="Mâncare umedă">Mâncare umedă</option>
+                            <option value="Mâncare uscată">Mâncare uscată</option>
+                            <option value="Recompense">Recompense</option>
+                            <option value="Iarba Pisicii">Iarba Pisicii</option>
+                            <option value="Pastile deparazitare">Pastile deparazitare</option>
+                            <option value="Șoarece de jucărie">Șoarece de jucărie</option>
+                            <option value="Perie pentru păr">Perie pentru păr</option>
+                            <option value="Suport pentru ascuțit ghearele">Suport pentru ascuțit ghearele</option>
+                            <option value="Zgardă">Zgardă</option>
+                            <option value="Litieră">Litieră</option>
+                            <option value="Nisip">Nisip</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="item">
+                    <div class="row">
+                            <label>Cantitate:</label>
+                            <input type="number" id="cantProd" name="cantitateProdus" min="1" max="100"> 
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="item">
+                    <div class="row">
+                        <label>Unitate de măsură:</label>
+                        <select name="Unitate de masura" id="umP">
+                            <option value="Bucăți">Bucăți</option>
+                            <option value="Kg">Kg</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="item">
+                    <button type="button" onclick="addProd()">Adaugă</button>
+                    <br>
+                </div>
+
+            </div>
+            
+            <table id="cumparaturi">
+                <tr>
+                    <td>ID</td>
+                    <td>Produs</td>
+                    <td>Cantitate</td>
+                    <td>Unitate de măsură</td>
+                </tr>
+            </table>
+
+        </div>
+        
+    </body>
+
+</html>

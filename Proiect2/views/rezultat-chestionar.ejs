@@ -1,0 +1,15 @@
+<h2>Rezultatele chestionarului</h2>
+
+<% for (var i = 0; i < listaIntrebari.length; i++) { %>
+<h3>Intrebarea <% i %>:</h3>
+<h4><%= listaIntrebari[i].intrebare %></h4>
+<ul>
+  <li>Raspunsul tau: <%= listaIntrebari[i].variante[raspunsuri[i]] %></li>
+  <li>Raspunsul corect: <%= listaIntrebari[i].variante[listaIntrebari[i].corect] %></li>
+</ul>
+<br>
+<% } %>
+
+<h4>Ai obținut <%= punctaj %> puncte din <%= listaIntrebari.length %> posibile.</h4>
+
+<h4>Ai răspuns corect la <%= procentajCorecte %>% din întrebări.</h4>

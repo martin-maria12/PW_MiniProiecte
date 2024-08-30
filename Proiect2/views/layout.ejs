@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="ro-RO">
+
+        <title>Artă</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+    </head>
+
+    <body>
+
+        <header id="HEADER">
+            <h1>Artă</h1>
+        </header>
+
+        <main>
+            <div class="container">
+
+                
+                <% if (utilizator) { %>
+                    <h1>Autentificat ca <%= utilizator.nume %>!</h1>
+                    <form action="/delogare" method="GET">
+                        <button type="submit">Deconectare</button>
+                    </form>
+                <% } %>
+                
+
+                <%- body %>
+            </div>
+
+        </main>
+
+        <footer>
+            <h4>&copy; 2023 Programare Web</h4>
+        </footer>
+
+    </body>
+</html>
